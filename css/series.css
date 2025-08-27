@@ -1,0 +1,90 @@
+.series {
+  padding: 64px 0;
+}
+
+.series__wrap {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-auto-rows: 190px;
+  gap: 30px;
+}
+
+.series__card:nth-child(1) {
+  padding: 96px 22px;
+  grid-column: 4 span;
+  grid-row: 2 span;
+  background: url(../img/seriesPost.png) no-repeat center/cover;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.series_-card-desc {
+    font-family: var(--CR);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bgr {
+  background: linear-gradient(
+    95.68deg,
+    rgba(35, 35, 35, 0.8) 10.86%,
+    rgba(11, 11, 11, 0.6) 110.86%
+  );
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.series__card:nth-child(2) {
+  grid-column: 2 span;
+  grid-row: 2 span;
+  background: url(../img/series1.png) no-repeat center/cover;
+}
+
+.series__card:nth-child(3) {
+  background: url(../img/series2.png) no-repeat center/cover;
+}
+
+.series__card:nth-child(4) {
+  background: url(../img/series3.png) no-repeat center/cover;
+}
+
+.series__card:nth-child(5) {
+  background: url(../img/series4.png) no-repeat center/cover;
+}
+
+.series__card:nth-child(6) {
+  background: url(../img/series5.png) no-repeat center/cover;
+}
+
+.series__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.series__card:nth-child(1) .series__card-title {
+  font-family: var(--CB);
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.series__card-title {
+  font-family: var(--CB);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
